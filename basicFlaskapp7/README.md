@@ -48,6 +48,19 @@ By making notes ahead of time, you will practice the core skill of being able to
 
 > View the [Frontend README](./frontend/README.md) for more details.
 
+### Learning Notes
+
+In order for the requests to be processed properly, 
+CORS utilizes headers to specify what the server will allow:
+
+Access-Control-Allow-Origin
+  What client domains can access its resources. For any domain use *
+Access-Control-Allow-Credentials
+  Only if using cookies for authentication - in which case its value must be true
+Access-Control-Allow-Methods
+  List of HTTP request types allowed
+Access-Control-Allow-Headers
+  List of http request header values the server will allow, particularly useful if you use any custom headers
 
 ### Development Notes 
 
@@ -66,11 +79,12 @@ pip install six --upgrade
 pip install SQLAlchemy --upgrade  
 pip install Werkzeug --upgrade  
 
-cd C:\ReSkill\Python\Trivia7
+cd C:\ReSkill\Python\Trivia79\Trivia7\
+cd C:\ReSkill\Python\Trivia79\Trivia7\basicFlaskapp7
 python -m virtualenv envTrivia7
 cd envTrivia7\Scripts
 activate.bat
-cd C:\ReSkill\Python\Trivia7
+cd C:\ReSkill\Python\Trivia79\Trivia7\basicFlaskapp7
 __init__.py		
 		
  migrate Commands
